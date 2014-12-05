@@ -1,7 +1,7 @@
-User.create(username: "Lyman", password: "123")
+User.create(username: "Lyman", email: "lymanwong@gmail.com", password: "123")
 
 10.times do
-  User.create(username: Faker::Name.name, password: 'boom')
+  User.create(username: Faker::Name.name, email: Faker::Internet.email, password: "boom")
 
   array = [1,2,3]
   workoutName = ["Dumbell", "Jumping Jacks", "Sprints", "Curls"]

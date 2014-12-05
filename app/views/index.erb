@@ -34,6 +34,8 @@
 <div id="main">
   <div id="column1">
     <h1>Welcome, <%= @user.username %>!</h1>
+    <img src=<%= gravatar_url(@user)%>>
+    </br>
     <h1>Checkout the community's workouts!</h1>
       <% @workouts.each do |workout| %>
       <li><a href="/workouts/<%= workout.id %>"><%= workout.name %><br> Weight: <%= workout.weight %><br>  Sets: <%= workout.set %><br>  Reps: <%= workout.rep %></a></li>
