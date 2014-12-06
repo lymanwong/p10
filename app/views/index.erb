@@ -40,7 +40,7 @@
       <% @workouts.each do |workout| %>
       <div id="listItems">
         <li><%= workout.user.username %></li>
-        <li><a href="/workouts/<%= workout.id %><%= workout.name %>/"></a></li>
+        <li><a href="/workouts/<%= workout.id %>"><%= workout.name %></a></li>
         <li>Weight: <%= workout.weight %></li>
         <li>Sets: <%= workout.set %></li>
         <li>Reps: <%= workout.rep %></li>
